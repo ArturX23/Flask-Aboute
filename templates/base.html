@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+
+    <title>
+        {% block title %}
+        Wizytówka
+        {% endblock %}
+    </title>
+
+    {% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    {% endblock %}
+</head>
+
+<body>
+
+<header>
+    {% block header %}
+    <h1 class="title">Witaj na mojej stronie domowej</h1>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl0No_8sKTc0q3VAQ2C907UT7n5xzQ5pW1kg&s"
+         alt="Zdjęcie profilowe"
+         title="Cat"
+         class="profile-img">
+    {% endblock %}
+</header>
+
+<main>
+    {% block content %}
+    {% endblock %}
+</main>
+
+</body>
+</html>
