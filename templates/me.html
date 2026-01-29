@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Wizytówka</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    </head>
+    <body>
+        <h1 class="title">Witaj na mojej stronie domowej</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl0No_8sKTc0q3VAQ2C907UT7n5xzQ5pW1kg&s" alt="Zdjęcie profilowe" title="Cat">
+        <h2>O mnie:</h2>
+        <h3 class="text">Imię: Artur<br>Nazwisko: Z.</h3>
+        <br>
+        <a href="{{ url_for('mypage') }}">← Wróć</a>
+    </body>
+</html>
